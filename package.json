@@ -2,12 +2,24 @@
   "name": "weather-cli",
   "version": "1.0.0",
   "description": "CLI for weather information.",
-  "main": "index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cli", "weather"],
+  "keywords": [
+    "cli",
+    "weather"
+  ],
   "author": "aeox",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
+  }
 }
